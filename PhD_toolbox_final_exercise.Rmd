@@ -25,13 +25,13 @@ The number of reads for each position in scaffold 35 are exported to one single 
 import os, glob, sys
 
 ##The HOME of the data of the project
-HOME = "/media/stefania/DATA/sync/files_analisi_genomi/"
+HOME = "/media/stefania/DATA/sync/Seminari-scuole/2017_Unix_R_basic/Stefania_project_def/Stefania_project_def/data_scaffold35/"
 
 ##List of cov scaffold 35 files
-cov_sc35 = glob.glob(os.path.join(HOME, "*.coverage.bp.sc35.txt"))
+cov_sc35 = glob.glob(os.path.join(HOME+"splitted", "*.coverage.bp.sc35.txt"))
 #print cov_sc35
 print "Source of data:", len(cov_sc35), "files called 'isolate_id'.coverage.bp.sc35.txt"
-outfile = os.path.join(HOME, "all.cov.bp.sc35.txt")
+outfile = os.path.join(HOME+"merged", "all.cov.bp.sc35.txt")
 print "output:", outfile
 print "Type of isolate  Isolate_id:"
 out = open(outfile, "w")
@@ -71,7 +71,7 @@ library(tidyverse)
 library(gridExtra)
 
 #import data and read
-cov_sc35  <- read.csv("/media/stefania/DATA/sync/files_analisi_genomi/all.cov.bp.sc35.txt", header=FALSE, sep="\t", stringsAsFactors = FALSE)
+cov_sc35  <- read.csv("/media/stefania/DATA/sync/Seminari-scuole/2017_Unix_R_basic/Stefania_project_def/Stefania_project_def/data_scaffold35/merged/all.cov.bp.sc35.txt", header=FALSE, sep="\t", stringsAsFactors = FALSE)
 
 #change columns names
 colnames(cov_sc35)[1] <- "type"
