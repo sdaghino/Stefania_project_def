@@ -11,7 +11,7 @@ Rationale of the experiment:
 The genome of 18 Oidiodendron maius strains has been sequenced. 9 isolates are metal tolerant (T) and 9 isolates are metal sensitive (S). The mapping has been done using the already available and annotated genome of the strain "Zn" as reference. All the uncovered positions in the genomes of the other isolates, are regions of the genome of O. maius Zn that are absent in the other genomes. Those regions could have evolved under the pressure of the heavy metal polluted soil in which O. maius Zn has been isolated, and could thus cointain genes functionally related with its metal tolerance. In this exercice I focus on the scaffold 35 of the genome. 
 
 Aim of the exercise : 
-
+PROVA COMMIT
 Start using the tools we learnt at the course!
 
 Plotting the coverage data of scaffold 35 and observe (a) whether there are differences between T and S in the number of reads covering the scaffold and (b) how the reads map along the scaffold in the different isolates.
